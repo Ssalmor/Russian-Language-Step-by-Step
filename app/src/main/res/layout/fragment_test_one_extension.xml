@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/linear"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lessonOne.TestOneExtension"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/mama"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/dom"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/dom"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/papa"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placeHolder1">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/banan"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@id/placeHolder4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/dom"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/bukva"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placeHolder4">
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/placeHolder1"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mama">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/placeHolder2"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/placeHolder4"
+        app:layout_constraintStart_toEndOf="@+id/placeHolder1"
+        app:layout_constraintTop_toBottomOf="@id/dom">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/placeHolder4"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/banan">
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/placeHolder5"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bukva">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wordHolderLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/checkAnswer"
+        app:layout_constraintEnd_toStartOf="@+id/placeHolder5"
+        app:layout_constraintStart_toEndOf="@+id/placeHolder3"
+        app:layout_constraintTop_toBottomOf="@+id/placeHolder2"
+        app:layout_constraintVertical_bias="0.066"
+        android:background="@drawable/shape">
+
+        <TextView
+            android:id="@+id/dragText5"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:text="Буква"
+            android:textColor="#153626"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/dragText1"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:text="Банан"
+            android:textColor="#153626"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/dragText3"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:text="Мама"
+            android:textColor="#153626"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/dragText4"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:text="Папа"
+            android:textColor="#153626"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/dragText2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:text="Дом"
+            android:textColor="#153626"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/placeHolder3"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/papa">
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/checkAnswer"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="Проверить"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/button_bg"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

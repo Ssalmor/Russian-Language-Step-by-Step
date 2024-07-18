@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/tvHe"
+        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:text="Он"
+        app:layout_constraintBottom_toTopOf="@id/rvHe"
+        app:layout_constraintEnd_toStartOf="@+id/tvShe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEmptyListHe"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="He List is Empty!"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHe"
+        app:layout_constraintEnd_toStartOf="@id/rvShe"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHe"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHe"
+        app:layout_constraintEnd_toStartOf="@id/rvShe"
+        app:layout_constraintBottom_toTopOf="@+id/check_btn"/>
+
+    <TextView
+        android:id="@+id/tvShe"
+        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:text="Она"
+        app:layout_constraintBottom_toTopOf="@id/rvShe"
+        app:layout_constraintEnd_toStartOf="@+id/tvIt"
+        app:layout_constraintStart_toEndOf="@id/tvHe"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvShe"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/rvHe"
+        app:layout_constraintTop_toBottomOf="@id/tvShe"
+        app:layout_constraintEnd_toStartOf="@id/rvIt"
+        app:layout_constraintBottom_toTopOf="@+id/check_btn"/>
+
+    <TextView
+        android:id="@+id/tvEmptyListShe"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="She List is Empty!"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/rvHe"
+        app:layout_constraintTop_toBottomOf="@id/tvShe"
+        app:layout_constraintEnd_toStartOf="@id/rvIt"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvIt"
+        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:text="Оно"
+        android:gravity="center"
+        android:textSize="25sp"
+        style="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintBottom_toTopOf="@id/rvIt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvShe"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvIt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/rvShe"
+        app:layout_constraintTop_toBottomOf="@id/tvIt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/check_btn"/>
+
+    <TextView
+        android:id="@+id/tvEmptyListIt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="It List is Empty!"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/rvShe"
+        app:layout_constraintTop_toBottomOf="@id/tvIt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/check_btn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="Проверить"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/button_bg"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".lessonFour.TextsFour"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/questionNumHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:text="Вопрос №"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/btnPrev"
+        app:layout_constraintEnd_toEndOf="@id/btnNext" />
+
+    <ImageButton
+        android:id="@+id/btnPrev"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/baseline_arrow_back_24"/>
+
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/baseline_arrow_forward_24"/>
+
+    <TextView
+        android:id="@+id/textHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/questionNumHolder"
+        app:layout_constraintBottom_toTopOf="@id/radioGroup"
+        android:textSize="20sp"
+        android:gravity="center"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:text="some big textsome big textsome big textsome big textsome big textsome big textsome big textsome big textsome big textsome big textsome big textsome big textsome big textsome big textsome big textsome big textsome big textsome big textsome big textsome big text"/>
+
+    <TextView
+        android:id="@+id/questionHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:text="some text"
+        android:layout_margin="50dp"
+        style="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textHolder"
+        app:layout_constraintBottom_toTopOf="@id/radioGroup"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textHolder"
+        app:layout_constraintBottom_toTopOf="@id/btnPrev">
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

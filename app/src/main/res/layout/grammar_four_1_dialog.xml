@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Слушайте. Повторяйте\n\nГрамматическая конструкция\nУ меня есть...\n"
+            android:textSize="36sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            style="@style/TextAppearance.AppCompat.Title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv1"
+            app:layout_constraintBottom_toTopOf="@id/ok_button">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Я - у меня"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="35sp"
+                    android:layout_marginEnd="5dp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Мы - у нас"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="35sp"
+                    android:layout_marginStart="5dp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Ты - у тебя"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="35sp"
+                    android:layout_marginEnd="5dp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Вы - у вас"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="35sp"
+                    android:layout_marginStart="5dp"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Он - у него"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="35sp"
+                    android:layout_marginEnd="5dp"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Они - у них"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="35sp"
+                    android:layout_marginStart="5dp"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Она - у неё"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="35sp"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ok_button"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Понятно"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textAllCaps="false"
+            android:background="@drawable/button_bg"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintTop_toBottomOf="@id/table"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
