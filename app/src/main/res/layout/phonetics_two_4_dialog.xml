@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="32dp"
-    app:cardElevation="6dp">
+    style="@style/explanationCard">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -12,62 +10,40 @@
         android:background="@drawable/background">
         <TextView
             android:id="@+id/tv1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Запомните!"
-            android:layout_margin="10dp"
-            android:textSize="60sp"
-            style="@style/TextAppearance.AppCompat.Title"
+            style="@style/titleExplanationText"
+            android:text="@string/remember"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
             android:id="@+id/tv2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Правило чтения:"
-            style="@style/TextAppearance.AppCompat.Headline"
-            android:layout_margin="10dp"
-            android:textSize="35sp"
+            style="@style/sectionExplanationText"
+            android:text="@string/reading_rule"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv1"/>
 
         <TextView
             android:id="@+id/tv3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ач=ачь [ач']"
-            style="@style/TextAppearance.AppCompat.Headline"
-            android:layout_margin="10dp"
-            android:textSize="35sp"
+            style="@style/sectionExplanationText"
+            android:text="@string/ach"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv2"/>
 
         <TextView
             android:id="@+id/tv4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="мяч [м'ач']"
-            android:layout_margin="10dp"
-            android:textSize="35sp"
-            android:gravity="center"
-            style="@style/TextAppearance.AppCompat.Headline"
+            style="@style/sectionExplanationText"
+            android:text="@string/hard_ach"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/tv5"
             app:layout_constraintTop_toBottomOf="@id/tv3"/>
 
         <TextView
             android:id="@+id/tv5"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="дочь [доч']"
-            android:layout_margin="10dp"
-            android:textSize="35sp"
-            android:gravity="center"
-            style="@style/TextAppearance.AppCompat.Headline"
+            style="@style/sectionExplanationText"
+            android:text="@string/soft_ach"
             app:layout_constraintStart_toEndOf="@id/tv4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv3"/>
@@ -101,13 +77,8 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/ok_button"
-            android:layout_width="190dp"
-            android:layout_height="wrap_content"
-            android:text="Понятно"
-            android:gravity="center"
-            android:textSize="35sp"
-            android:textAllCaps="false"
-            android:background="@drawable/button_bg"
+            style="@style/confirmationButtons"
+            android:text="@string/clearText"
             app:layout_constraintTop_toBottomOf="@id/line"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

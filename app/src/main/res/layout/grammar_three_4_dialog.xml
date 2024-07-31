@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="16dp"
-    app:cardElevation="6dp">
+    style="@style/explanationCard">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -12,16 +10,27 @@
         android:background="@drawable/background">
         <TextView
             android:id="@+id/tv1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Грамматическая конструкция\nМеня зовут...\n\nМеня зовут Андрей\n-Как вас зовут?\n\nЗапомните!"
-            android:textSize="36sp"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            style="@style/TextAppearance.AppCompat.Title"
+            style="@style/titleExplanationText"
+            android:text="@string/grammatical_construction"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/sectionExplanationText"
+            android:text="@string/my_name_is"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv1"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            style="@style/titleExplanationText"
+            android:text="@string/remember"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv2"/>
 
         <TableLayout
             android:id="@+id/table"
@@ -29,7 +38,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv1"
+            app:layout_constraintTop_toBottomOf="@id/tv3"
             app:layout_constraintBottom_toTopOf="@id/ok_button">
             <TableRow
                 android:layout_margin="10dp">

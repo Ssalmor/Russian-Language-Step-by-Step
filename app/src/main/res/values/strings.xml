@@ -1,5 +1,55 @@
 <resources>
     <string name="app_name">Russian Language - Step by Step</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="confirmationText">Вы не ответили на все вопросы.\n\nВы действительно хотите закончить выполнение?\nПропущенные вопросы будут засчитаны, как неверные.</string>
+
+    <string name="agreeText">Дальше</string>
+    <string name="disagreeText">Остаться</string>
+    <string name="clearText">Понятно</string>
+    <string name="tempText">tempText</string>
+    <string name="tempEditText">_____ tempText</string>
+
+    <string name="remember">Запомните!</string>
+    <string name="reading_rule">Правило чтения:</string>
+
+    <!-- Урок 2, фонетика, задание 1 -->
+    <string name="name_letter_sound">Назовите букву и звук</string>
+
+    <!-- Урок 2, фонетика, задание 2 -->
+    <string name="listen_repeat_readSyllables">Слушайте. Повторяйте. Читайте слоги</string>
+
+    <!-- Урок 2, фонетика, задание 3 -->
+    <string name="listen_repeat_readWords">Слушайте. Повторяйте. Читайте слова</string>
+
+    <!-- Урок 2, фонетика, задание 4 -->
+    <string name="ach">ач=ачь [ач\']</string>
+    <string name="hard_ach">мяч [м\'ач\']</string>
+    <string name="soft_ach">дочь [доч\']</string>
+
+    <!-- Урок 2, фонетика, задание 5 -->
+    <string name="letter_e">e</string>
+    <string name="reading_e">[е]\n\nбиле́т\n[б'ил'э́т]</string>
+    <string name="reading_i">[и]\n\nсестра́\n[с'истра́]</string>
+
+    <!-- Урок 3, фонетика, задание 4 -->
+    <string name="phonetics3_task4_text">Посмотрите на рисунки. Задайте вопрос и ответьте по модели. Следите за правильной интонацией</string>
+    <string name="phonetics3_task4_model">Модель: бабушка (дедушка) - Это бабушка или дедушка? Это бабушка</string>
+
+    <!-- Урок 3, фонетика, задание 3 -->
+    <string name="phonetics3_task3_text">Прослушайте вопросы и ответьте на них отрицательно. Используйте слова, данные в скобках. Следите за интонацией</string>
+    <string name="phonetics3_task3_model">Модель: Это ресторан? (кафе) - Нет, это не ресторан, это кафе</string>
+
+    <!-- Урок 4, фонетика, задание 3 -->
+    <string name="listen_repeat">Слушайте и повторяйте</string>
+
+    <!-- Урок 4, фонетика, задание 2 -->
+    <string name="readWords">Прочитайте слова, соблюдая правила чтения</string>
+
+    <!-- Урок 3, грамматика, задание 5 -->
+    <string name="grammar3_task5_text">Прочитайте текст. Вставьте местоимения «мой», «моя», «моё»; «меня», «его», «её», «вас».</string>
+
+    <!-- Урок 3, грамматика, задание 4 -->
+    <string name="grammatical_construction">Грамматическая конструкция</string>
+    <string name="my_name_is">Меня зовут…\n- Как вас зовут?\n- <b>Меня</b> зовут Андрей</string>
 </resources>

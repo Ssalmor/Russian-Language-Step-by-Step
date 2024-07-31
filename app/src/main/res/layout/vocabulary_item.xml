@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="8dp"
-    android:minHeight="70dp"
-    app:cardElevation="6dp"
-    android:layout_margin="10dp"
-    android:id="@+id/cardView">
+    android:id="@+id/cardView"
+    style="@style/vocabularyCard">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -16,14 +11,7 @@
 
         <TextView
             android:id="@+id/itemTv"
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="CodingSTUFF"
-            android:textColor="@color/purple_700"
-            android:textSize="28sp"
-            android:textStyle="bold"
+            style="@style/vocabularyText"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/itemIv"
@@ -31,11 +19,7 @@
 
         <ImageView
             android:id="@+id/itemIv"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="20dp"
+            style="@style/vocabularyImage"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>

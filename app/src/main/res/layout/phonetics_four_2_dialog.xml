@@ -12,28 +12,16 @@
         android:background="@drawable/background">
         <TextView
             android:id="@+id/tv1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Прочитайте слова, соблюдая правила чтения"
-            android:textSize="36sp"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            style="@style/TextAppearance.AppCompat.Title"
+            style="@style/sectionExplanationText"
+            android:text="@string/readWords"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/ok_button"
-            android:layout_width="190dp"
-            android:layout_height="wrap_content"
-            android:text="Понятно"
-            android:gravity="center"
-            android:textSize="35sp"
-            android:textAllCaps="false"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/button_bg"
+            style="@style/confirmationButtons"
+            android:text="@string/clearText"
             app:layout_constraintTop_toBottomOf="@id/tv1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
