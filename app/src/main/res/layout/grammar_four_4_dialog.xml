@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="16dp"
-    app:cardElevation="6dp">
+    style="@style/explanationCard">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -12,212 +10,34 @@
         android:background="@drawable/background">
         <TextView
             android:id="@+id/tv1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Прочитайте текст. Вставьте подходящие по смыслу слова\n\nЗапомните!"
-            android:textSize="36sp"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            style="@style/TextAppearance.AppCompat.Title"
+            style="@style/sectionExplanationText"
+            android:text="@string/grammar4_task4_text"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/grid1"/>
-
-        <GridLayout
-            android:id="@+id/grid1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:rowCount="5"
-            android:columnCount="4"
-
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv1"
-            app:layout_constraintBottom_toTopOf="@id/tv2">
-            <TextView
-                style="@style/TextAppearance.AppCompat.Title"
-                android:layout_gravity="center"
-                android:layout_column="3"
-                android:layout_row="0"
-                android:text="Как?"/>
-            <TextView
-                android:textSize="18sp"
-                android:layout_gravity="center"
-                android:layout_marginEnd="6dp"
-                android:layout_column="0"
-                android:layout_row="1"
-                android:text="Я"/>
-            <TextView
-                android:textSize="18sp"
-                android:layout_gravity="center"
-                android:layout_marginEnd="6dp"
-                android:layout_column="1"
-                android:layout_row="1"
-                android:text="говорю"/>
-            <TextView
-                android:textSize="18sp"
-                android:layout_gravity="center"
-                android:layout_marginEnd="6dp"
-                android:layout_column="2"
-                android:layout_row="1"
-                android:text="по-русски"/>
-            <TextView
-                android:textSize="18sp"
-                android:layout_gravity="center"
-                android:layout_column="3"
-                android:layout_row="1"
-                android:text="хорошо"/>
-            <TextView
-                android:textSize="18sp"
-                android:layout_gravity="center"
-                android:layout_marginEnd="6dp"
-                android:layout_column="1"
-                android:layout_row="2"
-                android:text="понимаю"/>
-            <TextView
-                android:textSize="18sp"
-                android:layout_gravity="center"
-                android:layout_marginEnd="6dp"
-                android:layout_column="2"
-                android:layout_row="2"
-                android:text="по-английски"/>
-            <TextView
-                android:textSize="18sp"
-                android:layout_gravity="center"
-                android:layout_column="3"
-                android:layout_row="2"
-                android:text="отлично"/>
-            <TextView
-                android:textSize="18sp"
-                android:layout_gravity="center"
-                android:layout_marginEnd="6dp"
-                android:layout_column="2"
-                android:layout_row="3"
-                android:text="по-арабски"/>
-            <TextView
-                android:textSize="18sp"
-                android:layout_gravity="center"
-                android:layout_column="3"
-                android:layout_row="3"
-                android:text="немного"/>
-            <TextView
-                android:textSize="18sp"
-                android:layout_gravity="center"
-                android:layout_marginEnd="6dp"
-                android:layout_column="2"
-                android:layout_row="4"
-                android:text="по-китайски"/>
-            <TextView
-                android:textSize="18sp"
-                android:layout_gravity="center"
-                android:layout_column="3"
-                android:layout_row="4"
-                android:text="плохо"/>
-        </GridLayout>
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
             android:id="@+id/tv2"
-            style="@style/TextAppearance.AppCompat.Title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            android:text="Запомните!"
-            android:textSize="36sp"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/titleExplanationText"
+            android:text="@string/remember"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/grid1" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv1"/>
 
-        <GridLayout
-            android:id="@+id/grid2"
+        <ImageView
+            android:id="@+id/iv1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:rowCount="5"
-            android:columnCount="4"
+            android:layout_height="250dp"
+            android:src="@drawable/what_how"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv2">
-            <TextView
-                style="@style/TextAppearance.AppCompat.Title"
-                android:layout_gravity="center"
-                android:layout_row="0"
-                android:layout_column="1"
-                android:text="Что?"/>
-            <TextView
-                style="@style/TextAppearance.AppCompat.Title"
-                android:layout_gravity="center"
-                android:layout_row="0"
-                android:layout_column="3"
-                android:text="Как?"/>
-            <TextView
-                android:textSize="16sp"
-                android:layout_gravity="center"
-                android:layout_marginEnd="6dp"
-                android:layout_row="1"
-                android:layout_column="0"
-                android:text="Я изучаю"/>
-            <TextView
-                android:textSize="16sp"
-                android:layout_gravity="center"
-                android:layout_marginEnd="6dp"
-                android:layout_row="1"
-                android:layout_column="1"
-                android:text="русский язык"/>
-            <TextView
-                android:textSize="16sp"
-                android:layout_gravity="center"
-                android:layout_marginEnd="6dp"
-                android:layout_row="1"
-                android:layout_column="2"
-                android:text="Я говорю"/>
-            <TextView
-                android:textSize="16sp"
-                android:layout_gravity="center"
-                android:layout_row="1"
-                android:layout_column="3"
-                android:text="по-русски"/>
-            <TextView
-                android:textSize="16sp"
-                android:layout_gravity="center"
-                android:layout_marginEnd="6dp"
-                android:layout_row="2"
-                android:layout_column="0"
-                android:text="знаю"/>
-            <TextView
-                android:textSize="16sp"
-                android:layout_gravity="center"
-                android:layout_marginEnd="6dp"
-                android:layout_row="2"
-                android:layout_column="1"
-                android:text="английский язык\nарабский язык\nкитайский язык"/>
-            <TextView
-                android:textSize="16sp"
-                android:layout_gravity="center"
-                android:layout_marginEnd="6dp"
-                android:layout_row="2"
-                android:layout_column="2"
-                android:text="понимаю"/>
-            <TextView
-                android:textSize="16sp"
-                android:layout_gravity="center"
-                android:layout_row="2"
-                android:layout_column="3"
-                android:text="по-английски\nпо-арабски\nпо-китайски"/>
-        </GridLayout>
+            app:layout_constraintTop_toBottomOf="@id/tv2"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/ok_button"
-            android:layout_width="190dp"
-            android:layout_height="wrap_content"
-            android:text="Понятно"
-            android:gravity="center"
-            android:textSize="35sp"
-            android:textAllCaps="false"
-            android:background="@drawable/button_bg"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            app:layout_constraintTop_toBottomOf="@id/grid2"
+            style="@style/confirmationButtons"
+            android:text="@string/clearText"
+            app:layout_constraintTop_toBottomOf="@id/iv1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>

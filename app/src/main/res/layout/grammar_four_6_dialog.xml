@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="16dp"
-    app:cardElevation="6dp">
+    style="@style/explanationCard">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -12,99 +10,34 @@
         android:background="@drawable/background">
         <TextView
             android:id="@+id/tv1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Прочитайте предложения. Вставьте почему, потому что или лучше, чем.\n\nЗапомните!"
-            android:textSize="36sp"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            style="@style/TextAppearance.AppCompat.Title"
+            style="@style/sectionExplanationText"
+            android:text="@string/grammar4_task6_text"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
-        <LinearLayout
-            android:id="@+id/table1"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/titleExplanationText"
+            android:text="@string/remember"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv1"
-            app:layout_constraintBottom_toTopOf="@id/table2"
-            android:background="@drawable/shape">
-            <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                style="@style/TextAppearance.AppCompat.Title"
-                android:textSize="28sp"
-                android:text="Почему ...? ..., потому что ..."
-                android:gravity="center"
-                android:layout_gravity="center"/>
-            <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="Почему Юйхан хорошо\nговорит по-китайски?"
-                android:textSize="16sp"
-                android:gravity="center"
-                android:layout_gravity="center"/>
-            <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:textSize="16sp"
-                android:layout_marginTop="10dp"
-                android:text="Юйхан хорошо \nговорит по-китайски, потому что \nэто его родной язык. "
-                android:gravity="center"
-                android:layout_gravity="center"/>
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/table2"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/tv1"/>
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="0dp"
+            android:layout_height="400dp"
+            android:src="@drawable/better_than"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/table1"
-            app:layout_constraintBottom_toTopOf="@id/ok_button"
-            android:background="@drawable/shape">
-            <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                style="@style/TextAppearance.AppCompat.Title"
-                android:textSize="28sp"
-                android:text="лучше, чем ..."
-                android:layout_gravity="center"
-                android:gravity="center"/>
-            <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:textSize="16sp"
-                android:text="Юйхан говорит по-китайски \nлучше, чем по-русски, \nпотому что это его \nродной язык."
-                android:gravity="center"
-                android:layout_gravity="center"/>
-            <TextView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:textSize="16sp"
-                android:layout_marginTop="10dp"
-                android:text="Антон говорит по-русски \nлучше, чем по-английски, \nпотому что он из России."
-                android:gravity="center"
-                android:layout_gravity="center"/>
-        </LinearLayout>
+            app:layout_constraintTop_toBottomOf="@id/tv2"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/ok_button"
-            android:layout_width="190dp"
-            android:layout_height="wrap_content"
-            android:text="Понятно"
-            android:gravity="center"
-            android:textSize="35sp"
-            android:textAllCaps="false"
-            android:background="@drawable/button_bg"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            app:layout_constraintTop_toBottomOf="@id/table2"
+            style="@style/confirmationButtons"
+            android:text="@string/clearText"
+            app:layout_constraintTop_toBottomOf="@id/iv1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>

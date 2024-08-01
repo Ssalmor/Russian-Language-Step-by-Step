@@ -12,25 +12,16 @@
         android:background="@drawable/background">
         <TextView
             android:id="@+id/tv1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Запомните!"
-            android:layout_margin="10dp"
-            android:textSize="60sp"
-            style="@style/TextAppearance.AppCompat.Title"
+            style="@style/titleExplanationText"
+            android:text="@string/remember"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
             android:id="@+id/tv2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Неодушевлённые имена существительные отвечают на вопрос что?\nК ним относятся названия неживых предметов, растений и явлений окружающего мира"
-            android:gravity="center"
-            style="@style/TextAppearance.AppCompat.Headline"
-            android:layout_margin="10dp"
-            android:textSize="35sp"
+            style="@style/sectionExplanationText"
+            android:text="@string/grammar2_inanimate"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv1"/>
@@ -38,7 +29,7 @@
         <ImageView
             android:id="@+id/iv2"
             android:layout_width="0dp"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:src="@drawable/forest"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -54,13 +45,8 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/ok_button"
-            android:layout_width="190dp"
-            android:layout_height="wrap_content"
-            android:text="Понятно"
-            android:gravity="center"
-            android:textSize="35sp"
-            android:textAllCaps="false"
-            android:background="@drawable/button_bg"
+            style="@style/confirmationButtons"
+            android:text="@string/clearText"
             app:layout_constraintTop_toBottomOf="@id/line"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

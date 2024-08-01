@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="16dp"
-    app:cardElevation="6dp">
+    style="@style/explanationCard">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -12,28 +10,16 @@
         android:background="@drawable/background">
         <TextView
             android:id="@+id/tv1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Прочитайте диалоги. Разыграйте их с друзьями по группе"
-            android:textSize="36sp"
-            android:layout_marginTop="10dp"
-            android:gravity="center"
-            style="@style/TextAppearance.AppCompat.Title"
+            style="@style/sectionExplanationText"
+            android:text="@string/grammar2_task4_text"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/ok_button"
-            android:layout_width="190dp"
-            android:layout_height="wrap_content"
-            android:text="Понятно"
-            android:gravity="center"
-            android:textSize="35sp"
-            android:textAllCaps="false"
-            android:background="@drawable/button_bg"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
+            style="@style/confirmationButtons"
+            android:text="@string/clearText"
             app:layout_constraintTop_toBottomOf="@id/tv1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
